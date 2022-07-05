@@ -1,19 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Windows and OSX Specific System Files
-.DS_Store
-*.swp
-ehthumbs.db
-Thumbs.db
-Icon\?
-
-# Tool and Project Meta: Node, Composer, PHPStorm, VSCode, Vagrant, Yarn
+# dependencies
 /node_modules
-/vendor
-/.idea
-/.vscode
-/.vagrant
-npm-debug.log
-yarn-error.log
-.env
+/.pnp
+.pnp.js
 
-nbproject/
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
